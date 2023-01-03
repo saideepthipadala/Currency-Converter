@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="595dp"
+        android:layout_height="248dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="-30dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/currency1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView3"
+        android:padding="45dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="-10dp"
+                app:srcCompat="@drawable/india" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="10dp"/>
+
+            <EditText
+                android:id="@+id/india"
+                android:layout_width="209dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="Amount in ₹"
+                android:layout_marginTop="15dp"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="52dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/us" />
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="10dp"/>
+
+
+            <EditText
+                android:id="@+id/us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount in $"
+                android:ems="10"
+                android:inputType="textPersonName"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/uk" />
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="10dp"/>
+
+            <EditText
+                android:id="@+id/uk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Amount in £"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="52dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/germany" />
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="10dp"/>
+
+
+            <EditText
+                android:id="@+id/germany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Amount in €"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:srcCompat="@drawable/korea" />
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="10dp"/>
+
+            <EditText
+                android:id="@+id/korea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Amount in ₩"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/convertButton"
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+            android:onClick="convertButton"
+            android:text="CONVERT"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
